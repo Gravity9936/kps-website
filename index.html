@@ -125,7 +125,7 @@
     <div class="hero">
         <div>
             <h1>Krishna Public School</h1>
-            <p id="tagline" class="editable" contenteditable="true">
+            <p id="tagline" class="editable" contenteditable="false">
                 Excellence in Education & Character Building
             </p>
         </div>
@@ -136,7 +136,7 @@
 
         <section>
             <h2>About Us</h2>
-            <div id="about" class="editable" contenteditable="true">
+            <div id="about" class="editable" contenteditable="false">
                 Krishna Public School is dedicated to nurturing young minds through quality education,
                 discipline, creativity, and moral values.
             </div>
@@ -144,14 +144,14 @@
 
         <section>
             <h2>Address</h2>
-            <div id="address" class="editable" contenteditable="true">
+            <div id="address" class="editable" contenteditable="false">
                 123 School Lane, City Name, State, ZIP Code, India
             </div>
         </section>
 
         <section>
             <h2>Contact Details</h2>
-            <div id="contact" class="editable" contenteditable="true">
+            <div id="contact" class="editable" contenteditable="false">
                 Phone: +91 98765 43210<br>
                 Email: info@krishnapublicschool.edu<br>
                 Website: www.krishnapublicschool.edu
@@ -160,7 +160,7 @@
 
         <section>
             <h2>Announcements</h2>
-            <div id="announcements" class="editable" contenteditable="true">
+            <div id="announcements" class="editable" contenteditable="false">
                 🎉 Admissions Open for 2026–27!  
                 📚 New smart classrooms introduced.
             </div>
@@ -182,22 +182,8 @@
         <p>&copy; 2026 Krishna Public School. All rights reserved.</p>
     </footer>
 
-    <script>
-        const elements = ['tagline', 'about', 'address', 'contact', 'announcements'];
-
-        document.addEventListener('DOMContentLoaded', () => {
-            elements.forEach(id => {
-                const saved = localStorage.getItem(id);
-                if (saved) document.getElementById(id).innerHTML = saved;
-            });
-        });
-
-        document.addEventListener('input', e => {
-            if (e.target.classList.contains('editable')) {
-                localStorage.setItem(e.target.id, e.target.innerHTML);
-            }
-        });
-    </script>
+    
 
 </body>
 </html>
+
